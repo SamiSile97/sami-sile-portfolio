@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "TT-Ricordi-Fulmini";
+  src: local("TT-Ricordi-Fulmini"),
+   url("./Fonts/TT-Ricordi-Fulmini.ttf") format("truetype");
+  font-weight: bold;
+ }
