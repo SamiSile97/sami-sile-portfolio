@@ -13,6 +13,11 @@ function App() {
           <img src="headshot.JPG" alt="headshot of sami sile smiling"></img>
         </div>
       </div>
+      <div className="circle1"></div>
+      <div className="circle2"></div>
+      <div className="connect">
+        <h3 className="connect-sentence"><span className="connect-word">Connect</span> with me</h3>
+      </div>
     </div>
   );
 }

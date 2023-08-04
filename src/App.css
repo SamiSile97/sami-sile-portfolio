@@ -6,7 +6,9 @@
 
 img {
   aspect-ratio: auto;
-  max-width: 30vw;
+  max-width: 25vw;
+  border-radius: 3px;
+  box-shadow: 5px 7px 4px 0px rgba(0, 0, 0, 0.45);
 }
 
 h1, h2 {
@@ -15,8 +17,10 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   margin: 0%;
+  display: inline-block;
+  transform: scale(1.4, 1);
 }
 
 h2 {
@@ -27,16 +31,84 @@ h2 {
 .name-and-title {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  align-items: center;
+  width: 32vw;
 }
 
 .line {
   border-bottom: 2px solid black;
+  width: 30vw;
 }
 
 .name-and-image {
   padding-top: 5em;
+  padding-right: 5vw;
+  padding-left: 5vw;
   display: flex;
   justify-content: space-around;
-  align-items: center; ;
+  align-items: center;
+}
+
+.circle1, .circle2 {
+  height: 6em;
+  width: 6em;
+  background-color: rgb(249, 224, 207, 0.5);
+  filter: blur(8px);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  position: relative;
+  bottom: 130px;
+  left: 210px;
+  animation: moveCircle1 4s infinite alternate;
+}
+
+.circle2 {
+  position: relative;
+  bottom: 280px;
+  left: 525px;
+  animation: moveCircle2 3s infinite alternate;
+}
+
+@keyframes moveCircle1 {
+  from {
+    transform: translate(-80px, -80px); /* Initial position offset */
+  }
+  to {
+    transform: translate(60px, 60px); /* Final position offset */
+  }
+}
+
+@keyframes moveCircle2 {
+  from {
+    transform: translate(0px, 0px); /* Initial position offset */
+  }
+  to {
+    transform: translate(-90px, 90px); /* Final position offset */
+  }
+}
+
+.connect {
+  width: auto;
+  height: 8vh;
+  background-color: #F9E0CF;
+  position: relative;
+  bottom: 9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-sentence {
+  font-size: 2em;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-style: italic;
+}
+
+.connect-word {
+  color: #F5F4F3;
+  font-weight: 700;
 }
