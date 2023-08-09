@@ -1,4 +1,6 @@
 import './App.css';
+import ProjectCard from './Components/ProjectCarousel';
+import { projects } from './Data/projects';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
       <div className="circle2"></div>
       <div className="connect">
         <h3 className="connect-sentence"><span className="connect-word">Connect</span> with me</h3>
+      </div>
+      <div className='projects'>
+        {projects.map((data, index) => {return <ProjectCard img={data.img} text={data.text} key={index} />})}
       </div>
     </div>
   );
