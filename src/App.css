@@ -4,7 +4,7 @@
   height: 100vh;
 }
 
-img {
+.headshot {
   aspect-ratio: auto;
   max-width: 25vw;
   border-radius: 3px;
@@ -92,13 +92,14 @@ h2 {
 
 .connect {
   width: auto;
-  height: 8vh;
+  height: 9vh;
   background-color: #F9E0CF;
   position: relative;
   bottom: 9em;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2em;
 }
 
 .connect-sentence {
@@ -106,6 +107,8 @@ h2 {
   font-family: 'Montserrat';
   font-weight: 100;
   font-style: italic;
+  padding-right: 5em;
+  transform: translate(-1.5em);
 }
 
 .connect-word {
@@ -120,4 +123,10 @@ h2 {
   padding-bottom: 40px;
   position: relative;
   bottom: 5em;
+}
+
+.linkedin, .github, .email {
+  aspect-ratio: 1/1;
+  width: 3vw;
+  transform: translate(-2em);
 }
