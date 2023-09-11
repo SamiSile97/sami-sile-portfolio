@@ -1,9 +1,7 @@
 .App {
   text-align: center;
-  background-color: #F5F4F3;
-  border-radius: 5px;
+  background-color: #f5f4f3;
   height: 100%;
-  margin: 2.3em;
 }
 
 .headshot {
@@ -43,7 +41,7 @@ h2 {
 }
 
 .name-and-image {
-  padding-top: 5em;
+  padding-top: 3em;
   padding-right: 5vw;
   padding-left: 5vw;
   display: flex;
@@ -51,57 +49,17 @@ h2 {
   align-items: center;
 }
 
-.circle1, .circle2 {
-  height: 6em;
-  width: 6em;
-  background-color: rgb(249, 224, 207, 0.5);
-  filter: blur(8px);
-  border-radius: 50%;
-  position: absolute;
-}
-
-.circle1 {
-  position: relative;
-  bottom: 130px;
-  left: 210px;
-  animation: moveCircle1 4s infinite alternate;
-}
-
-.circle2 {
-  position: relative;
-  bottom: 280px;
-  left: 525px;
-  animation: moveCircle2 3s infinite alternate;
-}
-
-/* @keyframes moveCircle1 {
-  from {
-    transform: translate(-80px, -80px); 
-  }
-  to {
-    transform: translate(60px, 60px); 
-  }
-}
-
-@keyframes moveCircle2 {
-  from {
-    transform: translate(0px, 0px); 
-  }
-  to {
-    transform: translate(-90px, 90px); 
-  }
-} */
 
 .connect {
   width: auto;
-  height: 9vh;
+  height: 11vh;
   background-color: #F9E0CF;
-  position: relative;
   bottom: 9em;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2em;
+  margin-top: 4em;
 }
 
 .connect-sentence {
@@ -119,11 +77,10 @@ h2 {
 }
 
 .projects {
-  background-color: #F5F4F3;
   display: flex;
   justify-content: space-evenly;
-  position: relative;
-  bottom: 3.5em;
+  padding-bottom: 3em;
+  font-weight: bold;
 }
 
 .linkedin, .github, .email {
@@ -133,22 +90,34 @@ h2 {
 }
 
 .projects-section-h2 {
-  position: relative;
-  bottom: 3em;
+  padding-bottom: 1em;
   font-size: 2em;
 }
 
 .projects-section {
-  background-color: #F5F4F3;
-  border-radius: 5px;
+  background-color: #f5f4f3;
+  padding-top: 3em;
 }
 
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover;
+.my-story-h2 {
+  padding-top: 1.5em;
+  font-size: 2em;
+}
+
+.about-me-p {
+  width: 50vw;
+  font-size: 1.1em;
+  text-align: justify;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2em;
+  margin-top: 2.5em;
+  background-color: #f9e0cf6b;
+  box-shadow: 5px 7px 4px 0px rgba(0, 0, 0, 0.45);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
