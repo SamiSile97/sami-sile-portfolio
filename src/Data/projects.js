@@ -10,8 +10,9 @@ export const projects = [
         text : "A study buddy app that contains a quiz for testing your coding knowledge, as well as flashcards and resources for further learning.",
         link : "https://github.com/SchoolOfCode/bc14_w7_project-frontend-go-gitters"
     },
-    // {
-    //     img : "nathans landscaping.JPG",
-    //     text : "a landscape gardeners brand identity"
-    // }
+    {
+        img : "e-commerce.png",
+        text : "a fake store API app",
+        link : "https://github.com/SamiSile97/eCommerce"
+    }
 ]
