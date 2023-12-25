@@ -20,3 +20,15 @@
 a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+    .project-card {
+        width: 60vw;
+    }
+    .project-img {
+        width: 60vw;
+    }
+    .project-text {
+        font-size: 0.75em;
+    }
+}

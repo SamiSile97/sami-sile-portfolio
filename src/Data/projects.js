@@ -12,7 +12,7 @@ export const projects = [
     },
     {
         img : "e-commerce.png",
-        text : "a fake store API app",
+        text : "an e-commerce using the fake store API. It features a creative css design and search function.",
         link : "https://github.com/SamiSile97/eCommerce"
     }
 ]
